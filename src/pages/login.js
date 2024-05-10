@@ -8,7 +8,7 @@ const Login = () => {
   const router = useRouter();
   const [mail, setMail] = useState("");
   const [pass, setPass] = useState("");
-  const { signIn } = useAuth()
+  const { signIn } = useAuth();
 
   const login = async () => {
     const res = await axios
@@ -17,8 +17,8 @@ const Login = () => {
         pass,
       })
       .then((e) => {
-        signIn(e.data.user.name, e.data.user.mail)
-        alert('Амжилттай нэвтэрлээ')
+        signIn(e.data.user.name, e.data.user.mail);
+        alert("Амжилттай нэвтэрлээ");
         router.push("/");
       })
       .catch((e) => console.log(e));
@@ -35,7 +35,9 @@ const Login = () => {
 
   return (
     <div className="w-screen h-screen bg-dark-1 flex justify-center items-center flex-col gap-10 font-roboto">
-      <img src="https://i.ibb.co/kgHXn2N/image.png" className="h-12"></img>
+      <a href="/">
+        <img src="https://i.ibb.co/kgHXn2N/image.png" className="h-12"></img>
+      </a>
       <div className="w-[50%] h-[70%] border rounded-3xl flex justify-center gap-10 items-center flex-col">
         <h1 className="text-2xl text-white-1 font-bold">Бүртгэлд Нэвтрэх</h1>
         <div className="w-[100%] h-auto flex justify-center gap-4 items-center flex-col">

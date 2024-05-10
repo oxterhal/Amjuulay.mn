@@ -45,7 +45,9 @@ const SignUp = () => {
 
   return (
     <div className="w-screen h-screen bg-dark-1 flex justify-center items-center flex-col gap-10 font-roboto">
-      <img src="https://i.ibb.co/kgHXn2N/image.png" className="h-12"></img>
+      <a href="">
+        <img src="https://i.ibb.co/kgHXn2N/image.png" className="h-12"></img>
+      </a>
       <div className="w-[50%] h-[80%] border rounded-3xl flex justify-center gap-10 items-center flex-col">
         <h1 className="text-2xl text-white font-bold">Бүртгэл Үүсгэх</h1>
         <div className="w-[100%] h-auto flex justify-center gap-4 items-center flex-col">
