@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/assets/**/*.{js,ts,jsx,tsx,mdx}}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "red-l": "#E86868",
+        "red-d": "#CC1F1F",
+        "yellow-l": "#FFB733",
+        "yellow-d": "#CC8400",
+        "green-l": "#97D27A",
+        "green-d": "#60AB3A",
+        "dark-1": "#121212",
+        "dark-2": "#1F1F1F",
+        "dark-3": "#2B2B2B",
+        "dark-4": "#383838",
+        "white-1": "#F7F7F7",
+        "white-2": "#EBEBEB",
+        "white-3": "#DEDEDE",
+        "white-4": "#D1D1D1",
+        purple: "#8338EC",
+        "purple-d": "#973BF7",
+        "purple-l": "#CB9DFB",
+        "blue-l": "#76A5EA",
+        "blue-d": "#216CD9",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        roboto: ["var(--font-roboto)"],
+      },
+      fontSize: {
+        58: "3.125rem",
+        36: "2rem",
+        22: "1.125rem",
+        16: "0.875rem",
+        14: "0.75rem",
+        10: "0.5rem",
+        0: "0rem",
+      },
+      spacing: {
+        side: "18.75rem",
+        sidemin: "5.5rem",
+        2.5: "0.625rem",
+        22: "5.5rem",
+        input: "26.25rem",
+        inputsm: "20rem",
+        "small-card": "12rem",
+      },
+      borderRadius: {
+        10: "0.625rem",
+      },
+    },
+  },
+  plugins: [],
+};
